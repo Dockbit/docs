@@ -1,0 +1,21 @@
+s3_id: <%= ENV['DOCKBIT_AWS_S3_WEBSITE_KEY'] %>
+s3_secret: <%= ENV['DOCKBIT_AWS_S3_WEBSITE_SECRET'] %>
+s3_bucket: dockbit-docs
+s3_endpoint: us-west-2
+s3_reduced_redundancy: true
+
+cloudfront_distribution_id: <%= ENV['DOCKBIT_AWS_S3_WEBSITE_CLOUDFRONT_ID'] %>
+cloudfront_distribution_config:
+  default_cache_behavior:
+    viewer_protocol_policy: redirect-to-https
+  aliases:
+    quantity: 1
+    items:
+      CNAME: docs.dockbit.com
+
+index_document: index.html
+
+gzip:
+  - .html
+  - .css
+  - .js

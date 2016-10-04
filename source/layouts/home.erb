@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head><%= partial 'head' %></head>
+
+  <body class='home'>
+    <header>
+      <%= partial 'nav' %>
+
+      <div class='hero'>
+        <h1>Dockbit <span>/ docs</span></h1>
+        <%= partial 'search' %>
+      </div>
+    </header>
+
+    <div class='container'>
+      <div class='row'>
+        <div class='twelve columns'>
+          <%= yield %>
+        </div>
+
+        <%= partial 'contribution' %>
+      </div>
+    </div>
+
+    <%= partial 'footer' %>
+  </body>
+</html>

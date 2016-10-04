@@ -1,0 +1,12 @@
+---
+title: Home
+layout: home
+---
+
+<ul class='topics'>
+  <li><a href='/getting-started/'>Getting Started</a></li>
+  <% topics.each do |page, data| %>
+    <% next if data[:url] == '/getting-started/' -%>
+    <li><a href='<%= data[:url] %>'><%= data[:title] %></a></li>
+  <% end %>
+</ul>

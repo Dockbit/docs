@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head><%= partial 'head' %></head>
+
+  <body class='<%= page_classes %>'>
+    <header>
+      <%= partial 'nav' %>
+
+      <div class='title'>
+        <div class='container'>
+          <div class='breadcrumbs'>
+            <%= breadcrumbs current_page, separator: '/' %>
+          </div>
+          <div class='row'>
+            <div class='eight columns'>
+              <h1><%= current_page.data.title %></h1>
+            </div>
+            <div class='four columns right'>
+              <%= partial 'search' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class='container'>
+      <div class='row'>
+        <div class='eight columns page'>
+          <%= yield %>
+          <% if current_page.metadata[:page][:topics] %>
+            <ul class='topics'>
+              <% topics(parent: current_page).each do |page, data| %>
+                <li>
+                  <% if data[:meta] %>
+                    <h2><a href='<%= data[:url] %>'><%= data[:title] %></a></h2>
+                    <a href='<%= data[:url] %>'><%= data[:meta] %></a>
+                  <% else %>
+                    <a href='<%= data[:url] %>'><%= data[:title] %></a>
+                  <% end %>
+                </li>
+              <% end %>
+            </ul>
+          <% end %>
+        </div>
+        <div class='four columns'>
+          <div id='sidebar-anchor'></div>
+          <div id='sidebar'>
+            <% if current_page.metadata[:page][:toc] %>
+              <div class='toc'>
+                <h3>Quick Nav</h3>
+                <%= table_of_contents(current_page) %>
+              </div>
+            <% else %>
+              <%= partial 'contribution' %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%= partial 'footer' %>
+  </body>
+</html>
