@@ -17,15 +17,24 @@ npm run-script build
 
 ## Node versions
 
-The default version of Node.js is `0.12.15`.
+The default version of Node.js is `6.8.0`.
 
 We also have the following versions installed:
 
 * 0.10.46
+* 0.12.15
 * 5.12.0
 * 6.5.0
 
 You can switch to any of them and activate using [NVM - Node Version Manager](https://github.com/creationix/nvm) by executing `nvm use <version>` before other commands.
+
+## Yarn
+
+As an alternative to NPM, Dockbit supports [Yarn](https://yarnpkg.com) package manager. Yarn is still a relatively new project, therefore expect things to change quite a bit. If you want to use Yarn today, all you need is the `yarn.lock` at the root of your repository and Dockbit will automatically use Yarn instead of NPM. Then, just [run](https://yarnpkg.com/en/docs/cli/run) the script, for example:
+
+```
+yarn run ember build
+```
 
 ## Did you know?
 
