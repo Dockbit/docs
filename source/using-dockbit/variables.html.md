@@ -24,13 +24,14 @@ To create a Pipeline Variable, click on **Variables** while you're in the _Pipel
 
 In addition to setting your own variables, Dockbit provides built-in Variables that can be very beneficial for deployment workflows.
 
-| Name                       | Description                                        |
-|----------------------------|----------------------------------------------------|
-| DOCKBIT_TEAM_NAME          | Team name that created the Pipeline                |
-| DOCKBIT_PIPELINE_NAME      | Pipeline name                                      |
-| DOCKBIT_DEPLOYMENT_SHA     | Git SHA retrieved from the deployment command      |
-| DOCKBIT_DEPLOYMENT_REF     | Git Ref provided by the deployment command         |
-| DOCKBIT_DEPLOYMENT_CREATOR | Dockbit username of the deployment creator         |
+| Name                       | Description                                             |
+|----------------------------|---------------------------------------------------------|
+| DOCKBIT_TEAM_NAME          | Team name that created the Pipeline                     |
+| DOCKBIT_PIPELINE_NAME      | Pipeline name                                           |
+| DOCKBIT_DEPLOYMENT_SHA     | Git SHA retrieved from the deployment command           |
+| DOCKBIT_DEPLOYMENT_REF     | Git Ref provided by the deployment command              |
+| DOCKBIT_DEPLOYMENT_CREATOR | Dockbit username of the deployment creator              |
+| DOCKBIT_CWD                | Working directory of the pipeline with a Git repository |
 
 ### Sensitive variables
 
