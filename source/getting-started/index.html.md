@@ -17,7 +17,7 @@ Pipeline consists of a number of stages, powered by Dockbit's [Integrations](/in
 
 ## Step-by-step
 
-To get you started, let us walk you through creating a sample deployment pipeline for an [Example Ember.js application](https://github.com/DockbitExamples/ember) and deploy it to [AWS](../integrations/aws-s3-website), along with any intermediary steps necessary to build and verify our application. We assume you've already [signed up](https://dockbit.com) and created your Dockbit Team.
+To get you started, let us walk you through creating a sample deployment pipeline for an [Example Ember.js application](https://github.com/DockbitExamples/ember) and deploy it to [AWS](../integrations/aws-s3-website), along with any intermediary steps necessary to build and verify our application. We assume you've already [signed up](https://dockbit.com), created your Dockbit Team and [added it to Slack](../chats/slack).
 
 Before creating any pipeline, it's beneficial to think a bit of the steps involved, which are in our case:
 
@@ -32,8 +32,8 @@ Creating a Dockbit Pipeline is easy, but we will need a sample application. If y
 
 All you need to do now, is to click on the **Create pipeline** button in the top navigation, choose the forked repository and click **Create**:
 
-  * The **Name** uniquely identifies this pipeline in your Team. It is also referenced in the [Slack](../chats/slack) chatbot when triggering deployments.
-  * The **Slack channel** is one of the channels you've [authorized Dockbit](../chats/slack) for during the onboarding process. It is used to receive deployment notifications.
+  * The **Name** uniquely identifies this pipeline in your Team. It is also referenced in [Slack](../chats/slack) when triggering deployments.
+  * The **Slack channel** is the channel where you want to receive deployment notifications.
 
 ![Getting Started - Step 1](../images/getting-started/create-pipeline.png)
 
@@ -51,7 +51,7 @@ Notice how we didn't need to install our app dependencies, nor configure credent
 
 ### 3. Deploy from Slack
 
-It's time to deploy, right from Slack! Open up the Slack channel you've authorized Dockbit for, instruct the Dockbit chatbot to deploy, and sit back-n-watch what happens.
+It's time to deploy, right from Slack! Open up the Slack channel you've configured in the Pipeline Settings, instruct the Dockbit chatbot to deploy, and sit back-n-watch what happens.
 
 ![Getting Started - Step 3](../images/getting-started/deploy-from-slack.gif)
 
