@@ -16,7 +16,7 @@ If you've skipped connecting Slack during the onboarding process, you can always
 
 You can now type `/dockbit help` command in your team chat and it will tell you everything you can do with Dockbit.
 
-When you interact with the Slack bot for the first time, you will be asked to authenticate yourself with [GitHub](../vcs/github). This is a required step to let us correctly map your Slack account to the Dockbit account. After that, you are all set to operate Dockbit from within your team Slack.
+When you interact with the Slack bot for the first time, you will be asked to authenticate yourself with [GitHub](../../vcs/github). This is a required step to let us correctly map your Slack account to the Dockbit account. After that, you are all set to operate Dockbit from within your team Slack.
 
 
 ## Configuring Pipeline Slack Channel
