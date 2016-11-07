@@ -3,7 +3,7 @@ title: Jenkins
 meta: Jenkins is an extensible open source continuous integration server.
 ---
 
-[Jenkins](https://jenkins-ci.org) is  the leading open source automation server, [Jenkins](https://jenkins-ci.org) provides hundreds of plugins to support building, deploying and automating any project.
+[Jenkins](https://jenkins-ci.org) is the leading open source automation server. Jenkins provides hundreds of plugins to support building, deploying and automating any project.
 
 When added to the pipeline, Dockbit deployments will require a successful build status reported to it's Webhook endpoint to proceed. Therefore, we'll need to configure [Jenkins](https://jenkins-ci.org) to send payload to the Dockbit generated unique URL.
 
