@@ -9,7 +9,9 @@ meta: Chef is an open source software agent that automates your infrastructure b
 
 The Chef provider allows you to execute any `knife` commands as part of your pipeline.
 
-Configuring the Chef provider requires a Chef admin client private key as mentioned in the [official documentation](https://docs.chef.io/knife_configure.html) for Knife. The private key is stored on disk at `$HOME/.chef/client.pem`.
+You'll need to supply a [knife.rb](https://docs.chef.io/config_rb_knife.html) configuration file in your repository under `.chef/knife.rb`. We provide an example in the [Chef examples repo](https://github.com/DockbitExamples/chef/blob/master/.chef/knife.rb).
+
+Configuring the Chef provider also requires a Chef admin client private key as mentioned in the [official documentation](https://docs.chef.io/knife_configure.html) for Knife. The private key is stored on disk at `$HOME/.chef/client.pem`.
 
 Once you have the private key, fill it in the Dockbit Stage configuration:
 
