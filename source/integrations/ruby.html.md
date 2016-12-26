@@ -13,7 +13,7 @@ There's no configuration required for this provider, you only need to supply the
 
 ## Ruby versions
 
-The default version of Ruby is `2.3.1`.
+The default version of Ruby is `2.3.2`.
 
 We also have the following versions installed:
 
@@ -23,6 +23,7 @@ We also have the following versions installed:
 * 2.2.3
 * 2.2.4
 * 2.3.0
+* 2.3.1
 
 You can switch to any of them and activate using [Rbenv](https://github.com/rbenv/rbenv) with one of the following methods:
 
