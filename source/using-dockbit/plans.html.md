@@ -1,7 +1,7 @@
 ---
 title: Plans
 toc: true
-meta: Choose the correct plan for your organization.
+meta: Choose the right plan for your organization.
 ---
 
 When you first login to your Dockbit organization you will be on _Free plan_. See the table below to see how the different plans differ from each other.
