@@ -1,15 +1,13 @@
 ---
-title: Heroku
+title: Heroku CLI
 meta: Heroku is a cloud platform for deploying and running modern apps integrated with today’s most popular developer tools and workflows.
 ---
 
 [Heroku](https://www.heroku.com/platform) is a cloud platform based on a managed container system, with integrated data services and a powerful ecosystem, for deploying and running modern apps. The Heroku developer experience is an app-centric approach for software delivery, integrated with today’s most popular developer tools and workflows.
 
-The Heroku provider lets you use Heroku [Command Line Interface (CLI)](https://devcenter.heroku.com/articles/heroku-command-line) to deploy your pipeline.
+The Heroku CLI provider lets you use the [Heroku Command Line Interface (CLI)](https://devcenter.heroku.com/articles/heroku-command-line) to deploy your pipeline. Within Dockbit you can also use the legacy Ruby-based Heroku Toolbelt, available as a [separate provider](../heroku-toolbelt).
 
-Over the years, Heroku transitioned their CLI from being Ruby-based to the next generation CLI based on top of Node and Go. Within Dockbit you can use both the [legacy Heroku Toolbelt](https://devcenter.heroku.com/articles/heroku-cli#legacy-ruby-cli) as well as the new CLI, available as 2 separate providers.
-
-Configuring the Heroku provider requires an API Token and App name, please refer to the [official documentation](https://devcenter.heroku.com/articles/authentication#retrieving-the-api-token) for instructions on how to get your API key. If the provided App does not exist, it will be created.
+Configuring the Heroku CLI provider requires an API Token and App name, please refer to the [official documentation](https://devcenter.heroku.com/articles/authentication#retrieving-the-api-token) for instructions on how to get your API key. If the provided App does not exist, it will be created.
 
 Once you have the token and app the name, fill them in the Dockbit Stage configuration:
 
