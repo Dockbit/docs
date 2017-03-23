@@ -25,8 +25,8 @@ We also have the following versions installed:
 
 You can switch to any of them and activate using [pyenv](https://github.com/yyuu/pyenv) with one of the following methods:
 
-* Set the value of the Ruby version in the Dockbit Pipeline variable named `PYENV_VERSION`.
-* Set the value of the Ruby version in the `.python-version` file at the root directory of your repository.
+* Set the value of the Python version in the Dockbit Pipeline variable named `PYENV_VERSION`.
+* Set the value of the Python version in the `.python-version` file at the root directory of your repository.
 
 Dockbit follows pyenv's official [loading order](https://github.com/yyuu/pyenv#choosing-the-python-version).
 
