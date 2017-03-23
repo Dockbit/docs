@@ -23,7 +23,7 @@ heroku run rake db:migrate
 git push heroku $DOCKBIT_DEPLOYMENT_SHA:master
 ```
 
-![Heroku](../images/integrations/heroku.png)
+![Heroku](../images/integrations/heroku-cli.png)
 
 ## Did you know?
 
