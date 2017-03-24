@@ -17,7 +17,7 @@ phpunit
 
 ## PHP versions
 
-The version of PHP used is `5.6.26`, we also have [composer](https://getcomposer.org/) version `1.2.1` installed.
+The version of PHP used is `7.0`, we also have [composer](https://getcomposer.org/) version `1.2.1` installed.
 
 ## Did you know?
 
