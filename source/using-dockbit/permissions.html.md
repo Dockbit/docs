@@ -59,4 +59,5 @@ And that's it, you're done! You have now successfully created a team, added memb
 | Manage variables         | ✓     |       |      |
 | Read sensitive variables | ✓     |       |      |
 | Deploy pipeline          | ✓     | ✓     |      |
+| Manage pipeline locks    | ✓     | ✓     |      |
 | Manage branches          | ✓     | ✓     |      |
