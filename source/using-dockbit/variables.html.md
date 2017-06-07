@@ -26,7 +26,7 @@ In addition to setting your own variables, Dockbit provides built-in Variables t
 
 | Name                       | Description                                             |
 |----------------------------|---------------------------------------------------------|
-| DOCKBIT_TEAM_NAME          | Team name that created the Pipeline                     |
+| DOCKBIT_ORGANIZATION_NAME  | Organization name of the pipeline                       |
 | DOCKBIT_PIPELINE_NAME      | Pipeline name                                           |
 | DOCKBIT_DEPLOYMENT_SHA     | Git SHA retrieved from the deployment command           |
 | DOCKBIT_DEPLOYMENT_REF     | Git Ref provided by the deployment command              |
