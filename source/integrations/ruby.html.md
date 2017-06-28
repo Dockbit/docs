@@ -13,7 +13,7 @@ There's no configuration required for this provider, you only need to supply the
 
 ## Ruby versions
 
-The default version of Ruby is `2.3.2`.
+The default version of Ruby is `2.4.1`.
 
 We also have the following versions installed:
 
@@ -24,6 +24,10 @@ We also have the following versions installed:
 * 2.2.4
 * 2.3.0
 * 2.3.1
+* 2.3.2
+* 2.3.4
+* 2.4.0
+* 2.4.1
 
 You can switch to any of them and activate using [Rbenv](https://github.com/rbenv/rbenv) with one of the following methods:
 
@@ -35,4 +39,3 @@ Dockbit follows Rbenv's official [loading order](https://github.com/rbenv/rbenv#
 ## Did you know?
 
 If Dockbit discovers that you have a `Gemfile` in your repository, it'll utilize [hacher](https://github.com/Dockbit/hacher) to cache your Ruby Gems for faster builds.
-
