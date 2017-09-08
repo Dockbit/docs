@@ -11,6 +11,14 @@ If you'd like to use the Docker provider to push images to the [Docker Hub](http
 
 By default, the Docker provider looks for a [Dockerfile](https://docs.docker.com/engine/reference/builder/) at the root of your source code repository. If that's not the case, you can supply a relative path to the directory containing the Dockerfile inside the repository.
 
+The provider supports Docker [build-time arguments](https://docs.docker.com/engine/reference/commandline/build/#set-build-time-variables-build-arg). If you have multiple arguments, you can supply them with comma as the separator. Here's an example:
+
+```
+ENVIRONMENT=production,SHA=$DOCKBIT_DEPLOYMENT_SHA
+```
+
+Take note of `$DOCKBIT_DEPLOYMENT_SHA`. Dockbit [variables](../../using-dockbit/variables) are available and can be used for setting dynamic values for the build-time arguments.
+
 Below you can find the configuration that can be used in the Dockbit Stage:
 
 * ```Image``` - Required - Docker Image name (can include organizations and tags)
@@ -18,6 +26,7 @@ Below you can find the configuration that can be used in the Dockbit Stage:
 * ```Registry password``` - Required - Docker Hub or Registry password
 * ```Dockerfile path``` - Optional - Relative path to Dockerfile
 * ```Registry url``` - Optional - Private registry URL
+* ```Build arguments``` - Optional - Docker [build-time arguments](https://docs.docker.com/engine/reference/commandline/build/#set-build-time-variables-build-arg)
 
 ![Docker](../images/integrations/docker.png)
 
