@@ -17,18 +17,24 @@ The provider supports Docker [build-time arguments](https://docs.docker.com/engi
 ENVIRONMENT=production,SHA=$DOCKBIT_DEPLOYMENT_SHA
 ```
 
-Take note of `$DOCKBIT_DEPLOYMENT_SHA`. Dockbit [variables](../../using-dockbit/variables) are available and can be used for setting dynamic values for the build-time arguments.
+Take note of `$DOCKBIT_DEPLOYMENT_SHA`. Dockbit [variables](../../using-dockbit/variables) are available and can be used for setting dynamic values for the build-time arguments. Moreover, you can use Dockbit variables inside the Docker Provider configuration itself. For instance, your image name can be `your_organization/image_name:${DOCKBIT_DEPLOYMENT_SHA}` where the Docker image tag will be dynamically set to value of the SHA. Make sure to use curly braces around the variable for proper [variable expansion](http://www.gnu.org/software/bash/manual/bash.html#Shell-Parameter-Expansion).
 
 Below you can find the configuration that can be used in the Dockbit Stage:
 
-* ```Image``` - Required - Docker Image name (can include organizations and tags)
+* ```Image``` - Required - Docker Image name (can include organizations and tags). Accepts multiple entries delimited by a `,`
 * ```Registry username``` - Required - Docker Hub or Registry user name
 * ```Registry password``` - Required - Docker Hub or Registry password
 * ```Dockerfile path``` - Optional - Relative path to Dockerfile
 * ```Registry url``` - Optional - Private registry URL
 * ```Build arguments``` - Optional - Docker [build-time arguments](https://docs.docker.com/engine/reference/commandline/build/#set-build-time-variables-build-arg)
 
-![Docker](../images/integrations/docker.png)
+Example: Building a Docker image with 2 build-time arguments:`SHA` and `ENVIRONMENT`, then pushing to the Docker hub (notice how no Registry URL is set).
+
+![Docker-hub](../images/integrations/docker-1.png)
+
+Example: Building a Docker image with 2 tags: `ruby` and `ruby:${DOCKBIT_DEPLOYMENT_SHA}`, then pushing to a private Docker registry located at `registry.example.com`.
+
+![Docker-registry](../images/integrations/docker-2.png)
 
 ## Did you know?
 
