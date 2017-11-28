@@ -11,7 +11,7 @@ cloudfront_distribution_config:
   aliases:
     quantity: 1
     items:
-      CNAME: docs.dockbit.com
+      - docs.dockbit.com
 
 index_document: index.html
 
