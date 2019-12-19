@@ -124,7 +124,7 @@ GEM
       activesupport (>= 3.1)
     parallel (1.9.0)
     pkg-config (1.1.7)
-    rack (1.6.4)
+    rack (1.6.12)
     rack-livereload (0.3.16)
       rack
     rake (11.3.0)
